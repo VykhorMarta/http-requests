@@ -1,0 +1,8 @@
+<input type="text" [(ngModel)] = "name">
+<input type="number" [(ngModel)] = "sallary">
+<button (click) = "addNewEmployer()">Add new employer</button>
+
+<div *ngFor = "let empl of emloyers">
+  <p>{{empl.name}}</p>
+  <p>{{empl.sallary}}</p>
+</div>
